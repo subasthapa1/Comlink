@@ -13,7 +13,7 @@ public class RecruitUsers {
 		this.driver=driver;
 		PageFactory.initElements(driver, this); 
 	}
-	@FindBy(linkText="Add New")
+	@FindBy(xpath="/html/body/div/div/div[3]/div/div[1]/div/a")
 	WebElement addNewUser;
 	
 	@FindBy(xpath="/html/body/div/div/div[3]/div/div[3]/div/div[2]/div/table/tbody/tr[1]/td[8]/a")

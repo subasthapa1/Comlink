@@ -2,17 +2,18 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32842" started-at="2017-05-22T09:11:12Z" finished-at="2017-05-22T09:11:45Z">
+  <suite name="Default suite" duration-ms="29954" started-at="2017-05-23T10:48:54Z" finished-at="2017-05-23T10:49:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32842" started-at="2017-05-22T09:11:12Z" finished-at="2017-05-22T09:11:45Z">
+    <test name="Default test" duration-ms="29954" started-at="2017-05-23T10:48:54Z" finished-at="2017-05-23T10:49:24Z">
       <class name="PageObject.RecruitUsersCases">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:PageObject.RecruitUsersCases@204f30ec]" name="setUp" is-config="true" duration-ms="0" started-at="2017-05-22T14:56:12Z" finished-at="2017-05-22T14:56:12Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:PageObject.RecruitUsersCases@204f30ec]" name="setUp" is-config="true" duration-ms="0" started-at="2017-05-23T16:33:54Z" finished-at="2017-05-23T16:33:54Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at PageObject.Dashboard.openLink(Dashboard.java:13)
-	at PageObject.RecruitUsersCases.setUp(RecruitUsersCases.java:22)
+	at PageObject.AddRecruiter.setEmailField(AddRecruiter.java:59)
+	at PageObject.AddRecruiter.setAllRequiredFields(AddRecruiter.java:114)
+	at PageObject.RecruitUsersCases.setUp(RecruitUsersCases.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
