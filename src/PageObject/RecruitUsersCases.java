@@ -23,7 +23,7 @@ public class RecruitUsersCases {
 		//dshbrd.openLink("Recruiter Users");
 		driver.navigate().to("http://qa.codefirm.net/system/agent/pages/recruiters");
 		driver.navigate().to("http://qa.codefirm.net/system/news/pages/news/create");
-		rctr1.setAllRequiredFields("a@gmail.com","Test","Man","9873737373","Kathmandu,Nepal","Kathmandu","7867");
+		rctr1.setAllRequiredFields("a@gmail.com","Test","Man","9873737373","Kathmandu Nepal","Kathmandu","7867");
 		//rcrtUsr.clickAddUser();
 	  }
 	/*@Test

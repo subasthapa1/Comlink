@@ -1,124 +1,140 @@
 package PageObject;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class AddRecruiter {
-	WebDriver driver;
+	public WebDriver driver;
 	public AddRecruiter(WebDriver driver){
 		driver=this.driver;
+		PageFactory.initElements(driver,this);
 	}
 	@FindBy(id="enterEmail")
-	WebElement emailField;
+	public WebElement emailField;
 	
 	@FindBy(id="first_name")
-	WebElement firstNameField;
+	public WebElement firstNameField;
 	
 	@FindBy(id="middle_name")
-	WebElement middleNameField;
+	public WebElement middleNameField;
 	
 	@FindBy(id="last_name")
-	WebElement lastNameField;
+	public WebElement lastNameField;
 	
 	@FindBy(id="phone")
-	WebElement phoneField;
+	public WebElement phoneField;
 	
 	@FindBy(name="addr_line1")
-	WebElement addressLineField1;
+	public WebElement addressLineField1;
 	
 	@FindBy(name="addr_line2")
-	WebElement addressLineField2;
+	public WebElement addressLineField2;
 	
 	@FindBy(name="city")
-	WebElement cityField;
+	public WebElement cityField;
 	
 	@FindBy(id="zip_code")
-	WebElement zipCodeField;
+	public WebElement zipCodeField;
 	
 	@FindBy(id="tax_id")
-	WebElement taxIdField;
+	public WebElement taxIdField;
 	
 	@FindBy(id="bank_name")
-	WebElement bankNameField;
+	public WebElement bankNameField;
 	
 	@FindBy(id="routing_number")
-	WebElement routingNumberField;
+	public WebElement routingNumberField;
 	
 	@FindBy(id="account_number")
-	WebElement accountNumberField;
+	public WebElement accountNumberField;
 	
 	
 	@FindBy(id="profile_pic")
-	WebElement profilePicField;
+	public WebElement profilePicField;
 	
 	
 	
    public void setEmailField(String email ){
+	   emailField.clear();
 	   emailField.sendKeys(email);
 	   }
     
    public void setFirstNameField(String firstName){
+	   firstNameField.clear();
 	   firstNameField.sendKeys(firstName);
         }
 
    public void setMiddleNameField(String middleName ){
+	   middleNameField.clear();
 	   middleNameField.sendKeys(middleName);
        }
 
    public void setLastNameField(String lastName){
+	   lastNameField.clear();
 	   lastNameField.sendKeys(lastName);
      }
 
    public void setPhoneField(String phone){
+	   phoneField.clear();
 	  phoneField.sendKeys(phone);
       }
 
    public void setAddress1Field(String address1 ){
-	addressLineField1.sendKeys(address1);
+	   addressLineField1.clear();
+	   addressLineField1.sendKeys(address1);
        }
 
    public void setAddress2Field(String address2){
-	addressLineField2.sendKeys(address2);
+	   addressLineField2.clear();
+	   addressLineField2.sendKeys(address2);
       }
 
    public void setCityField(String city){
+	   cityField.clear();
 	   cityField.sendKeys(city);
        }
 
    public void setZipCodeField(String zipCode){
+	   zipCodeField.clear();
 	   zipCodeField.sendKeys(zipCode);
       }
 
    public void setTaxIdField(String taxId){
-	taxIdField.sendKeys(taxId);
+	   taxIdField.clear();
+	   taxIdField.sendKeys(taxId);
       }
 
    public void setBankNameField(String bankName){
+	   bankNameField.clear();
 	   bankNameField.sendKeys(bankName);
      }
 
 public void setRoutingNumberField(String routingNumber){
+	routingNumberField.clear();
 	routingNumberField.sendKeys(routingNumber);
 }
 
 public void setAccountNumberField(String accountNumber){
+	accountNumberField.clear();
 	accountNumberField.sendKeys(accountNumber);
 }
 
 public void setProfileImageField(String profileImage){
+	profilePicField.clear();
 	profilePicField.sendKeys(profileImage);
 }
-public void setAllRequiredFields(String email,String firstName, String lastName, String phone, String address1, String city, String zipCode){
-	setEmailField(email);
-	setFirstNameField(firstName);
-	setLastNameField(lastName);
-	setPhoneField(phone);
-	setAddress1Field(address1);
-	setCityField(city);
-	setZipCodeField(zipCode);
-	WebElement el1=driver.findElement(By.cssSelector("#page-content > div.panel > div > form > div:nth-child(22) > div > div > button"));
-	el1.click();
+public void setAllRequiredFields(String emailId, String firstName, String lastName, String phone, String address1, String city, String zipCode){
+	this.setEmailField(emailId);
+	this.setFirstNameField(firstName);
+	this.setLastNameField(lastName);
+	this.setPhoneField(phone);
+	this.setAddress1Field(address1);
+	this.setCityField(city);
+	this.setZipCodeField(zipCode);
+	//WebElement el1=driver.findElement(By.cssSelector("#page-content > div.panel > div > form > div:nth-child(22) > div > div > button"));
+	//el1.click();
 }
 }
