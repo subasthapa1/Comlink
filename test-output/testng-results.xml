@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22397" started-at="2017-05-24T10:45:29Z" finished-at="2017-05-24T10:45:52Z">
+  <suite name="Default suite" duration-ms="30602" started-at="2017-05-25T10:51:26Z" finished-at="2017-05-25T10:51:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22397" started-at="2017-05-24T10:45:29Z" finished-at="2017-05-24T10:45:52Z">
+    <test name="Default test" duration-ms="30602" started-at="2017-05-25T10:51:26Z" finished-at="2017-05-25T10:51:57Z">
       <class name="PageObject.AddRecruiterCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:PageObject.AddRecruiterCases@58651fd0]" name="setUp" is-config="true" duration-ms="21062" started-at="2017-05-24T16:30:29Z" finished-at="2017-05-24T16:30:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:PageObject.AddRecruiterCases@58651fd0]" name="setUp" is-config="true" duration-ms="28802" started-at="2017-05-25T16:36:26Z" finished-at="2017-05-25T16:36:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addRecruiter()[pri:0, instance:PageObject.AddRecruiterCases@58651fd0]" name="addRecruiter" duration-ms="1286" started-at="2017-05-24T16:30:50Z" finished-at="2017-05-24T16:30:52Z">
+        <test-method status="FAIL" signature="addRecruiter()[pri:0, instance:PageObject.AddRecruiterCases@58651fd0]" name="addRecruiter" duration-ms="1646" started-at="2017-05-25T16:36:55Z" finished-at="2017-05-25T16:36:56Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

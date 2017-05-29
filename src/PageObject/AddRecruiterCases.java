@@ -11,7 +11,7 @@ public class AddRecruiterCases {
 	public LoginPage objLogin;
   @BeforeTest
   public void setUp(){
-	  System.setProperty("webdriver.chrome.driver", "D:/SeleniumWebdriver/chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D://SeleniumWebdriver//chromedriver.exe");
 
 	  driver =new ChromeDriver();
 	  //driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -25,7 +25,7 @@ public class AddRecruiterCases {
 	  
       AddRecruiter rctr2 = new AddRecruiter(driver);
       driver.get("http://qa.codefirm.net/system/agent/pages/recruiters/create");
-      rctr2.setAllRequiredFields("a@gmail.com","Test","Man","9873737373","Kathmandu Nepal","Kathmandu","7867");
+      rctr2.setAllRequiredFields("a@gmail.com", "Test", "Man", "9873737373", "Kathmandu Nepal", "Kathmandu", "7867");
   }
 	  
   }
